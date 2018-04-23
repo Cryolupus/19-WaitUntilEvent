@@ -2,9 +2,10 @@
 This module demonstrates lets you practice INPUT from the CONSOLE.
 
 Authors: David Mutchler, Valerie Galluzzi, Mark Hays, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         their colleagues and Kevin Chou.
+"""  # Done: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
+import math
 
 def main():
     """ TESTs the functions in this module (by calling them). """
@@ -15,6 +16,9 @@ def main():
 
 
 def double_a_float():
+    potato = float(input('Input a float:'))
+    print(potato * 2)
+
     """
     What comes in: Nothing.
     What goes out: Nothing (i.e. None)
@@ -30,12 +34,16 @@ def double_a_float():
          -6.28
     """
     # ------------------------------------------------------------------
-    # TODO: 2. Implement and test this function.
+    # Done: 2. Implement and test this function.
     #   The testing code is already written for you (above).
     # ------------------------------------------------------------------
 
 
 def print_an_integer_many_times():
+    positive = int(input('Input positive number'))
+    t = positive
+    for k in range(positive):
+        print(t*2)
     """
     What comes in: Nothing.
     What goes out: Nothing (i.e. None)
@@ -61,12 +69,17 @@ def print_an_integer_many_times():
          10
     """
     # ------------------------------------------------------------------
-    # TODO: 3. Implement and test this function.
+    # Done: 3. Implement and test this function.
     #   The testing code is already written for you (above).
     # ------------------------------------------------------------------
 
 
 def print_an_integer_many_times_on_one_row():
+    b = int(input('Input int'))
+    empty = ''
+    for k in range(b):
+        empty = empty + str(b*2)
+    print(empty)
     """
     Same as the previous problem, but print the numbers
     on a single line with no spaces in between them.
@@ -80,7 +93,7 @@ def print_an_integer_many_times_on_one_row():
          1010101010
     """
     # ------------------------------------------------------------------
-    # TODO: 4. Implement and test this function.
+    # Done: 4. Implement and test this function.
     #   The testing code is already written for you (above).
     #
     # HINT: One way to print on a SINGLE line is to build up a string
@@ -89,6 +102,14 @@ def print_an_integer_many_times_on_one_row():
 
 
 def input_it_all():
+    potato = float(input('Input Float:'))
+    potato2 = int(input('Input +Int:'))
+    potato3 = input('Input String:')
+    potatosqrt = math.sqrt(potato)
+    for k in range(potato2):
+        print(potatosqrt)
+    for k in range(potato2):
+        print(potato3)
     """
     What comes in: Nothing.
     What goes out: Nothing (i.e. None)
@@ -120,7 +141,7 @@ def input_it_all():
          Peace & Love.
     """
     # ------------------------------------------------------------------
-    # TODO: 5. Implement and test this function.
+    # Done: 5. Implement and test this function.
     #   The testing code is already written for you (above).
     # ------------------------------------------------------------------
 
