@@ -24,8 +24,8 @@ The WHILE TRUE pattern:
 Ultimately you should be comfortable with both approaches.
 
 Authors: David Mutchler, Valerie Galluzzi, Mark Hays, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         their colleagues and Kevin Chou.
+"""  # Done: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 
 def main():
@@ -73,6 +73,15 @@ def run_test_sum_until_prime_input():
 
 
 def sum_until_prime_input():
+    potato = 2
+    total = 0
+    while potato >= 2:
+        potato = int(input('Enter an integer greater than that is at least 2:'))
+        total = total + potato
+        if is_prime(potato) == True:
+            break
+    print('The sum of the input integers is:'+ str(total))
+
     """
     What comes in:  Nothing.
     What goes out: Nothing (i.e., None).
@@ -91,7 +100,7 @@ def sum_until_prime_input():
          The sum of the input integers is: 167
     """
     # ------------------------------------------------------------------
-    # TODO: 2. Implement and test this function.
+    # Done: 2. Implement and test this function.
     #   The testing code is already written for you (above).
     # ------------------------------------------------------------------
 
@@ -99,7 +108,7 @@ def sum_until_prime_input():
 def run_test_next_prime():
     """ Tests the   next_prime    function. """
     # ------------------------------------------------------------------
-    # TODO: 3. Implement this TEST function.
+    # Done: 3. Implement this TEST function.
     #   It TESTS the  wait_for_prime  function defined below.
     #   Include at least  ** 6 **  tests. (We supplied 5 tests for you.)
     #
